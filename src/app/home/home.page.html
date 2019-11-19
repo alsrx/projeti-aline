@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Entrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title> Login </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+
+      <ion-item>
+       <ion-label position ='floating'> Email </ion-label>
+        <ion-input type="text" placeholder="Insira seu Email" [(ngModel)]="pais.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+       <ion-label position ='floating' > Senha </ion-label>
+        <ion-input type="password" placeholder= " Insira sua Senha " [(ngModel)]="pais.senha"></ion-input>
+      </ion-item>
+
+
+      <ion-button color="secondary" expand="full" shape="round" (click)="logar()"> Entrar </ion-button>
+      <p style="text-align: center;"> Não possui um cadastro? </p>
+      <ion-button color="secondary" expand="full" shape="round" href="salvar"> Cadastre-se </ion-button>
+
+
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+
+</ion-footer>

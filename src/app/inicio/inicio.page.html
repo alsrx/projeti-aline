@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button auto-hide ></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="end" type="push">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item><ion-button color="light">Inicio</ion-button></ion-item>
+      <ion-item><ion-button color="dark" href="liberacoes">Liberações</ion-button></ion-item>
+      <ion-item><ion-button color="danger" href="home">Sair</ion-button></ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet main></ion-router-outlet>
+
+<ion-content>
+  <ion-item>
+   <ion-label position ='floating'> Eu:  </ion-label>
+    <ion-input type="text" placeholder="Nome do pai ou responsável" [(ngModel)]="formulario.nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Portador(a) do R.G. ou CPF:  </ion-label>
+    <ion-input type="text" placeholder="Insira seu R.G. ou CPF" [(ngModel)]="formulario.cpf"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> autorizo a saída do(a) aluno(a):  </ion-label>
+    <ion-input type="text" placeholder="Nome do aluno" [(ngModel)]="formulario.saida"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Matriculado(a) no:  </ion-label>
+    <ion-input type="text" placeholder="Série do aluno" [(ngModel)]="formulario.serie"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Curso Técnico em: </ion-label>
+    <ion-input type="text" placeholder="Curso em que o aluno está matriculado" [(ngModel)]="formulario.curso"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Pelo motivo:  </ion-label>
+    <ion-input type="text" placeholder="Digite aqui o motivo da liberação do aluno" [(ngModel)]="formulario.motivo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Grau de parentesco:  </ion-label>
+    <ion-input type="text" placeholder="Ex: pai,mãe,avó,etc" [(ngModel)]="formulario.parentesco"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Data:  </ion-label>
+    <ion-input type="text" placeholder="Insira aqui o dia em que o aluno precisa ser liberado" [(ngModel)]="formulario.data"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Horário:  </ion-label>
+    <ion-input type="text" placeholder="Insira aqui o horário em que o aluno precisa ser liberado" [(ngModel)]="formulario.horario"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" shape="round" color="secondary" (click)="salvar()"> Enviar </ion-button>
+  <ion-button expand="full" shape="round" color="secondary" href="home"> Sair </ion-button>
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastre-se</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+   <ion-label position ='floating'> Email </ion-label>
+    <ion-input type="text" placeholder="Insire seu email" [(ngModel)]="pais.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> RA </ion-label>
+    <ion-input type="text" placeholder="Insire o RA do aluno" [(ngModel)]="pais.ra"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Nome Completo </ion-label>
+    <ion-input type="text" placeholder="Insire seu nome" [(ngModel)]="pais.nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Celular </ion-label>
+    <ion-input type="text" placeholder="Insira seu celular" [(ngModel)]="pais.celular"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Telefone Opcional </ion-label>
+    <ion-input type="text" placeholder="Telefone Opcional" [(ngModel)]="pais.telefone"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label position ='floating'> Senha </ion-label>
+    <ion-input type="text" placeholder="Insira sua senha" [(ngModel)]="pais.senha"></ion-input>
+  </ion-item>
+
+
+  <ion-button color="secondary" (click)="salvar()" expand="full" shape="round"> Salvar </ion-button>
+
+  <ion-button color="secondary" href="home" expand="full" shape="round"> Voltar </ion-button>
+
+ 
+</ion-content>
